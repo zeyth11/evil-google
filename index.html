@@ -32,23 +32,28 @@
     cursor: pointer;
   }
   #answer { font-size: 48px; color: #000000; }
-  #logo { height: 200px; }
+  #logo {   height: 200%;  width: 200%;}
 </style>
 </head>
 <body>
 <div id="stage">
  <div>
-    <img id="evil google logo" src="evil google.png" alt="logo">
+    <img id="logo" src="evil google.png" alt="logo">
     <br>
     <input id="q" placeholder="search...">
     <button id="go">definitely not an evil search.... normal and kind search....</button>
+    <br>
+    <img src="fireflames.gif" alt="fire" />
+    <br>
+    <img src="explosion.gif" alt="explodes" />
+    <br>
     <p id="answer"></p>
   </div>
 </div>
 <script>
   // the example: delete this too
   document.getElementById('go').addEventListener('click', () => {
-    document.getElementById('answer').textContent = 'EVIL!!!!!';
+    document.getElementById('answer').textContent = 'EVIL RESPONSE!!!!!';
   });
 </script>
 </body>
