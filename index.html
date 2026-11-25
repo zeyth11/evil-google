@@ -7,24 +7,25 @@
 <style>
   /* Everything you make goes inside #stage: exactly 800 × 400 pixels. The gallery shows
      this box (shrunk to fit), so anything outside it won't be seen. */
-  html, body { margin: 0; background: #c53333; color: #390f0f; font: 16px/1.5 ui-monospace, Menlo, Consolas, monospace; }
+  html, body { margin: 0; background: #c53333; color: #390f0f; font: 16px/1.5 ui-monospace, Comic Sans, Comic Sans, monospace; }
   #stage {
     width: 800px; height: 400px; overflow: hidden; position: relative;
     display: grid; place-items: center; text-align: center;
     background: #c53333;
   }
 
-  /* ---- the example below: delete it and build your own ---- */
   .inputSearch{ color: #390f0f; font-size: 50px; }
   button { font: inherit; color: inherit; background: #6b1c1c; border: 0; border-radius: 6px; padding: .6rem 1.2rem; cursor: pointer; }
   input { font: inherit; padding: .6rem; }
   #answer { font-size: 48px; color: #000000; }
+  #logo { height: 100px; }
 </style>
 </head>
 <body>
 <div id="stage">
-  <!-- example evil input: volume you have to pump up by hand, and it leaks back down -->
  <div>
+    <img id="evil google logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgmV6kkHuYxh_FP71n_wXXb8MhI2jVhEc1eDg7DBI5RQ&s=10" alt="logo">
+    <br>
     <input id="q" placeholder="search...">
     <button id="go">definitely not an evil search.... normal and kind search....</button>
     <p id="answer"></p>
