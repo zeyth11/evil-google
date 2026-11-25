@@ -7,18 +7,18 @@
 <style>
   /* Everything you make goes inside #stage: exactly 800 × 400 pixels. The gallery shows
      this box (shrunk to fit), so anything outside it won't be seen. */
-  html, body { margin: 0; background: #292b47; color: #eceae3; font: 16px/1.5 ui-monospace, Menlo, Consolas, monospace; }
+  html, body { margin: 0; background: #c53333; color: #390f0f; font: 16px/1.5 ui-monospace, Menlo, Consolas, monospace; }
   #stage {
     width: 800px; height: 400px; overflow: hidden; position: relative;
     display: grid; place-items: center; text-align: center;
-    background: #23243d;
+    background: #c53333;
   }
 
   /* ---- the example below: delete it and build your own ---- */
-  .inputSearch{ color: #8d8aa6; font-size: 50px; }
-  button { font: inherit; color: inherit; background: #3f4168; border: 0; border-radius: 6px; padding: .6rem 1.2rem; cursor: pointer; }
+  .inputSearch{ color: #390f0f; font-size: 50px; }
+  button { font: inherit; color: inherit; background: #6b1c1c; border: 0; border-radius: 6px; padding: .6rem 1.2rem; cursor: pointer; }
   input { font: inherit; padding: .6rem; }
-  #answer { font-size: 48px; color: #e74c3c; }
+  #answer { font-size: 48px; color: #000000; }
 </style>
 </head>
 <body>
@@ -26,14 +26,14 @@
   <!-- example evil input: volume you have to pump up by hand, and it leaks back down -->
  <div>
     <input id="q" placeholder="search...">
-    <button id="go">search!!</button>
+    <button id="go">definitely not an evil search.... normal and kind search....</button>
     <p id="answer"></p>
   </div>
 </div>
 <script>
   // the example: delete this too
   document.getElementById('go').addEventListener('click', () => {
-    document.getElementById('answer').textContent = 'evil';
+    document.getElementById('answer').textContent = 'EVIL!!!!!';
   });
 </script>
 </body>
