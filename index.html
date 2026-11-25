@@ -33,24 +33,33 @@
   }
   #answer { font-size: 48px; color: #000000; }
   #logo {   height: 200px;}
-  #gif {height: 50px;}
+  #gif {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    z-index: 0;
+  }
+  #box {
+    position: relative;
+    z-index: 1;
+  }
 </style>
 </head>
 <body>
 <div id="stage">
  <div>
+
     <audio id="sound" src="Dracula Bach Organ.mp3"></audio>
     <img id="logo" src="evil google.png" alt="logo">  
     <br>
-    <input id="q" placeholder="search...">
-    <button id="go">definitely not an evil search.... normal and kind search....</button>
-    <br>
-    <img id="gif" src="fireflames.gif" alt="fire" hidden />
-    <br>
+    <div id="box">
+      <input id="q" placeholder="search...">
+      <button id="go">definitely not an evil search.... normal and kind search....</button>
+      <p id="answer"></p>
+    </div>
     <img id="gif" src="explosion.gif" alt="explodes" hidden />
-    <br>
-    <p id="answer"></p>
-  </div>
+    <img id="gif" src="fireflames.gif" alt="fire" hidden />
 </div>
 <script>
   // the example: delete this too
