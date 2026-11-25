@@ -15,30 +15,26 @@
   }
 
   /* ---- the example below: delete it and build your own ---- */
+  .inputSearch{ color: #8d8aa6; font-size: 50px; }
   button { font: inherit; color: inherit; background: #3f4168; border: 0; border-radius: 6px; padding: .6rem 1.2rem; cursor: pointer; }
-  .hint { color: #8d8aa6; font-size: 14px; }
+  input { font: inherit; padding: .6rem; }
+  #answer { font-size: 48px; color: #e74c3c; }
 </style>
 </head>
 <body>
 <div id="stage">
   <!-- example evil input: volume you have to pump up by hand, and it leaks back down -->
-  <div>
-    <button id="click">CLICK TO BECOME EVIL!!</button>
-    <p class="hint">terms and coniditions apply.</p>
+ <div>
+    <input id="q" placeholder="search...">
+    <button id="go">search!!</button>
+    <p id="answer"></p>
   </div>
 </div>
 <script>
   // the example: delete this too
-  let volume = 0;
-  const out = document.getElementById('vol');
-  document.getElementById('pump').addEventListener('click', () => {
-    volume = Math.min(100, volume + 7);
-    out.textContent = Math.round(volume);
+  document.getElementById('go').addEventListener('click', () => {
+    document.getElementById('answer').textContent = 'evil';
   });
-  setInterval(() => {
-    volume = Math.max(0, volume - 1);
-    out.textContent = Math.round(volume);
-  }, 120);
 </script>
 </body>
 </html>
