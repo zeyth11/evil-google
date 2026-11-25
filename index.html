@@ -32,7 +32,8 @@
     cursor: pointer;
   }
   #answer { font-size: 48px; color: #000000; }
-  #logo {   height: 100px;}
+  #logo {   height: 200px;}
+  #gif {height: 50px;}
 </style>
 </head>
 <body>
@@ -44,9 +45,9 @@
     <input id="q" placeholder="search...">
     <button id="go">definitely not an evil search.... normal and kind search....</button>
     <br>
-    <img src="fireflames.gif" alt="fire" />
+    <img id="gif" src="fireflames.gif" alt="fire" hidden />
     <br>
-    <img src="explosion.gif" alt="explodes" />
+    <img id="gif" src="explosion.gif" alt="explodes" hidden />
     <br>
     <p id="answer"></p>
   </div>
@@ -56,6 +57,7 @@
   document.getElementById('go').addEventListener('click', () => {
     document.getElementById('answer').textContent = 'EVIL RESPONSE!!!!!';
     document.getElementById('sound').play();
+    document.getElementById('gif').hidden = false;
   });
 </script>
 </body>
