@@ -1,14 +1,14 @@
-# <your project's name>
+# <EVIL google>
 
 <!-- This README is the front door of your project: the gallery shows its first lines. -->
 
 ## what it is
 
-<one or two sentences: what is your evil input?>
+it is google but if google was twisted and evil. it gives a pretty evil response to any query.
 
 ## what input it collects
 
-<text? a volume? a phone number? brightness? a time? and how does it make that miserable?>
+it collects a search from the user!
 
 ## screenshot
 
